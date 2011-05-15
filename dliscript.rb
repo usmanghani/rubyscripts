@@ -127,6 +127,8 @@ mechanize = Mechanize.new { |agent|
       rescue
         $logger.error 'Failed to download %s' % page_url
       end
+      Time.new
+      sleep 5
     }
   }
 }
